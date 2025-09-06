@@ -1,0 +1,67 @@
+<script setup>
+import router from "../../router";
+
+function goAboutUs() {
+  router.push("/conocenos");
+}
+</script>
+<template>
+  <section class="relative">
+    <div
+      class="flex flex-col gap-5 md:gap-15 lg:gap-20 md:flex-row lg:flex-row w-full md:h-[calc(100vh-44px) lg:h-[calc(100vh-44px)] items-center justify-start bg-white p-15 sm:p-25"
+    >
+      <div class="z-1">
+        <img
+          class="w-auto rounded-2xl md:w-[1200px] lg:w-[2500px]"
+          src="../../assets/gallery/gallery15.jpg"
+          alt=""
+        />
+      </div>
+      <div class="flex flex-col gap-5 lg:gap-8 z-10">
+        <div>
+          <span class="text-black text-2xl md:text-4xl lg:text-5xl font-bold"
+            >¿QUIÉNES SOMOS?</span
+          >
+        </div>
+        <div class="text-left">
+          <span class="text-black text-1xl md:text-2xl lg:text-3xl font-light"
+            >Estructuraciones y Estrategias S.A.S. (E2) es una empresa dedicada
+            a satisfacer integralmente las necesidades de entidades públicas y
+            privadas. Su enfoque estratégico e innovador busca guiar y gestionar
+            cada proceso, garantizando soluciones que respondan a las
+            expectativas de sus clientes.</span
+          >
+        </div>
+        <button
+          type="button"
+          @click="goAboutUs"
+          class="text-white bg-[var(--primary-color)] w-fit font-semibold px-10 py-2 text-lg rounded-full hover:text-[#3d7dbd] hover:bg-gray-200"
+        >
+          Ver más
+        </button>
+      </div>
+    </div>
+
+    <div class="absolute w-full h-auto bottom-0">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 197 2011 220"
+        style="
+          fill: var(--primary-color);
+          width: 100%;
+          height: 100%;
+          display: block;
+        "
+        preserveAspectRatio="none"
+      >
+        <g
+          transform="scale(-1,1) translate(-2011,0) rotate(269.3 222.25 222.25) scale(3,-6) translate(-2,-434)"
+        >
+          <path
+            d="M12.84,444.48c0.04,0,0.08,0,0.11,0c0.99,0,1.84-0.73,1.98-1.73L75.98,2.27c0.08-0.57-0.09-1.15-0.47-1.59 C75.13,0.25,74.58,0,74,0H2C1.46,0,0.94,0.22,0.57,0.6S-0.01,1.51,0,2.05l10.96,440.48C10.98,443.57,11.8,444.42,12.84,444.48z"
+          />
+        </g>
+      </svg>
+    </div>
+  </section>
+</template>
