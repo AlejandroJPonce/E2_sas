@@ -4,7 +4,7 @@
     class="relative flex flex-col gap-10 w-full h-[450px] lg:h-[550px] items-center justify-center bg-[var(--primary-color)]"
   >
     <div class="absolute top-0 lg:top-[-90px]">
-      <img class="w-[300px] lg:w-[300px] h-auto" src="../../assets/white_logo.webp" alt="" />
+      <img class="w-[200px] sm:w-[300px] h-auto" src="../../assets/white_logo.webp" alt="" />
     </div>
 
     <div class="flex items-center justify-center gap-5 mt-45 lg:mt-20">
